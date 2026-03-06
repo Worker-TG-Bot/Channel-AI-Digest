@@ -1,0 +1,22 @@
+
+name = "channel-digest-ai"
+main = "worker.js"
+compatibility_date = "2026-03-07"
+
+# Workers AI 绑定
+[ai]
+binding = "AI"
+
+# KV 命名空间绑定（部署前需创建并替换 id）
+[[kv_namespaces]]
+binding = "KV"
+id = "your-kv-namespace-id"
+
+# 环境变量（敏感变量建议使用 wrangler secret 设置）
+# [vars]
+# BOT_TOKEN = ""
+# WEBHOOK_SECRET = ""
+# ADMIN_ID = ""
+# SETUP_PASSWORD = ""
+# JINA_API_KEY = ""
+# AI_MODEL = "@cf/qwen/qwen2.5-coder-32b-instruct"
